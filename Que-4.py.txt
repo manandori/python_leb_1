@@ -1,0 +1,40 @@
+#initialize an empty list for employee names
+EMPNAME=[]
+
+#function to display the current list of employee names
+def display_employee_names():
+print("\ncurrent employee list:")
+for index, name in enumerate(EMPNAME, start=1):
+print(f"{index},{name}")
+
+#adding initial employee  names
+EMPNAME.extend(["john  doe", "jane  smith", "michael johnson"])
+
+#displaying initial employee list
+print("initial employee list:")
+display_employee_names()
+
+#adding a new employee
+EMPNAME.append("Emily brown")
+print("\nafter adding employee 'Emily brown':")
+display_employee_names()
+
+#removing an employee
+if "jane smith" in EMPNAME:
+EMPNAME.remove("jone smith")
+print("\nafter removing employee 'jane smith'")
+display_employee_names()
+
+#appending names from another list
+new_names=["david lee","emma white"]
+EMPNAME.extend(new_name)
+print("\nafter appending new names:")
+display_employee_names()
+
+
+
+
+
+
+
+
